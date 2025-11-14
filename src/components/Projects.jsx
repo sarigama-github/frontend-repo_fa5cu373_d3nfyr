@@ -71,7 +71,7 @@ function Projects() {
   return (
     <section id="projects" className="py-16">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-3xl font-extrabold text-gray-900 mb-6">Projects</h2>
+        <h2 className="text-3xl font-extrabold text-slate-100 mb-6">Projects</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((p, idx) => (
             <motion.div
@@ -80,18 +80,18 @@ function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.04 }}
-              className="group rounded-2xl overflow-hidden border border-white/70 bg-white/60 backdrop-blur shadow-[0_8px_30px_rgba(31,38,135,0.08)] hover:shadow-[0_12px_40px_rgba(31,38,135,0.15)] transition"
+              className="group rounded-2xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur shadow-[0_8px_30px_rgba(0,0,0,0.25)] hover:shadow-[0_12px_40px_rgba(56,189,248,0.25)] transition"
             >
               <div className="aspect-video overflow-hidden">
                 <img src={p.thumb} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
               </div>
               <div className="p-5">
-                <h3 className="font-bold text-gray-900">{p.title}</h3>
-                <p className="text-sm text-blue-700/90 mt-1">{p.stack}</p>
-                <p className="text-gray-700 mt-2 text-sm">{p.desc}</p>
+                <h3 className="font-bold text-slate-100">{p.title}</h3>
+                <p className="text-sm text-blue-300 mt-1">{p.stack}</p>
+                <p className="text-slate-300 mt-2 text-sm">{p.desc}</p>
                 <div className="mt-4 flex gap-3">
-                  <a href={p.live} target="_blank" className="px-4 py-2 rounded-lg bg-blue-600 text-white text-sm font-semibold hover:bg-blue-700 transition">Live</a>
-                  <a href={p.code} target="_blank" className="px-4 py-2 rounded-lg bg-white border border-gray-200 text-gray-900 text-sm font-semibold hover:bg-gray-50 transition">Code</a>
+                  <a href={p.live} target="_blank" className="px-4 py-2 rounded-lg bg-blue-500 text-white text-sm font-semibold hover:bg-blue-400 transition">Live</a>
+                  <a href={p.code} target="_blank" className="px-4 py-2 rounded-lg bg-white/10 border border-white/10 text-slate-100 text-sm font-semibold hover:bg-white/15 transition">Code</a>
                 </div>
               </div>
             </motion.div>

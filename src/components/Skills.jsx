@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 
 const Badge = ({ children }) => (
-  <span className="inline-flex items-center px-3 py-1 rounded-full bg-white/70 border border-gray-200 text-gray-800 text-sm mr-2 mb-2 shadow-sm">
+  <span className="inline-flex items-center px-3 py-1 rounded-full bg-white/5 border border-white/10 text-slate-200 text-sm mr-2 mb-2 shadow-sm">
     {children}
   </span>
 )
@@ -41,9 +41,9 @@ function Skills() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.05 }}
-              className="backdrop-blur bg-white/50 border border-white/70 rounded-2xl p-6 shadow-[0_8px_30px_rgba(31,38,135,0.08)]"
+              className="backdrop-blur bg-white/5 border border-white/10 rounded-2xl p-6 shadow-[0_8px_30px_rgba(0,0,0,0.25)]"
             >
-              <h3 className="text-xl font-bold text-gray-900 mb-3">{cat.title}</h3>
+              <h3 className="text-xl font-bold text-slate-100 mb-3">{cat.title}</h3>
               <div>
                 {cat.items.map((it) => (
                   <Badge key={it}>{it}</Badge>

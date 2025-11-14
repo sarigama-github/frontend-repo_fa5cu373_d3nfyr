@@ -13,9 +13,9 @@ const education = [
 function TimelineItem({ item }) {
   return (
     <div className="relative pl-8 pb-8">
-      <div className="absolute left-0 top-1.5 w-3 h-3 rounded-full bg-blue-600 shadow" />
-      <h4 className="font-semibold text-gray-900">{item.title}</h4>
-      {item.meta && <p className="text-sm text-gray-600 mt-1">{item.meta}</p>}
+      <div className="absolute left-0 top-1.5 w-3 h-3 rounded-full bg-blue-500 shadow" />
+      <h4 className="font-semibold text-slate-100">{item.title}</h4>
+      {item.meta && <p className="text-sm text-slate-400 mt-1">{item.meta}</p>}
     </div>
   )
 }
@@ -28,12 +28,12 @@ function ExperienceEducation() {
           initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="rounded-2xl border border-white/70 bg-white/60 backdrop-blur p-6 shadow-[0_8px_30px_rgba(31,38,135,0.08)]"
+          className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur p-6 shadow-[0_8px_30px_rgba(0,0,0,0.25)]"
         >
-          <h3 className="text-2xl font-bold text-gray-900 mb-2">Experience / Internships</h3>
-          <div className="border-l-2 border-blue-200 pl-4">
+          <h3 className="text-2xl font-bold text-slate-100 mb-2">Experience / Internships</h3>
+          <div className="border-l-2 border-blue-900/40 pl-4">
             {experiences.length === 0 ? (
-              <p className="text-gray-600">Coming soon — ready to add your upcoming roles.</p>
+              <p className="text-slate-400">Coming soon — ready to add your upcoming roles.</p>
             ) : (
               experiences.map((e) => <TimelineItem key={e.title} item={e} />)
             )}
@@ -44,10 +44,10 @@ function ExperienceEducation() {
           initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="rounded-2xl border border-white/70 bg-white/60 backdrop-blur p-6 shadow-[0_8px_30px_rgba(31,38,135,0.08)]"
+          className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur p-6 shadow-[0_8px_30px_rgba(0,0,0,0.25)]"
         >
-          <h3 className="text-2xl font-bold text-gray-900 mb-2">Education</h3>
-          <div className="border-l-2 border-blue-200 pl-4">
+          <h3 className="text-2xl font-bold text-slate-100 mb-2">Education</h3>
+          <div className="border-l-2 border-blue-900/40 pl-4">
             {education.map((e) => <TimelineItem key={e.title} item={e} />)}
           </div>
         </motion.div>

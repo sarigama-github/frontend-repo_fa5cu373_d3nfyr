@@ -25,14 +25,14 @@ function Certifications() {
   return (
     <section id="certs" className="py-16">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="rounded-2xl border border-white/70 bg-white/60 backdrop-blur p-6 shadow-[0_8px_30px_rgba(31,38,135,0.08)]">
-          <h3 className="text-2xl font-bold text-gray-900 mb-6">Certifications</h3>
+        <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur p-6 shadow-[0_8px_30px_rgba(0,0,0,0.25)]">
+          <h3 className="text-2xl font-bold text-slate-100 mb-6">Certifications</h3>
           <div className="relative overflow-hidden">
             <div className="whitespace-nowrap transition-transform duration-500" style={{ transform: `translateX(-${index * 100}%)` }}>
               <div className="inline-flex gap-4">
                 {items.map((it) => (
                   <div key={it} className="min-w-full">
-                    <div className="px-4 py-3 rounded-xl bg-gradient-to-br from-white/80 to-white/40 border border-white/70 shadow text-gray-900">
+                    <div className="px-4 py-3 rounded-xl bg-gradient-to-br from-white/10 to-white/5 border border-white/10 shadow text-slate-100">
                       {it}
                     </div>
                   </div>
